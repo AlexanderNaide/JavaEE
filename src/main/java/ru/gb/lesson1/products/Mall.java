@@ -10,14 +10,11 @@ import java.io.PrintWriter;
 
 @WebServlet("/mall/*")
 public class Mall extends HttpServlet {
-
     private ProductRepository productRepository;
-
     @Override
     public void init() throws ServletException {
         this.productRepository = (ProductRepository) getServletContext().getAttribute("productRepository");
     }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String request = req.getPathInfo().substring(1);
