@@ -1,14 +1,18 @@
-package ru.gb.lesson1;
+package ru.gb.lesson1.products;
 
 public class Product {
     private int id;
     private String title;
     private Double cost;
 
-    public Product(int id, String title, Double cost) {
-        this.id = id;
+    public Product(String title, Double cost) {
         this.title = title;
         this.cost = cost;
+    }
+
+    public Product(int id, String title, Double cost) {
+        this(title, cost);
+        this.id = id;
     }
 
     public int getId() {
