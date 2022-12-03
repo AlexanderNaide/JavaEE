@@ -1,5 +1,7 @@
 package ru.gb.lesson1;
 
+import ru.gb.lesson1.products.Product;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
